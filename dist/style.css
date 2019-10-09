@@ -56,11 +56,53 @@ main {
 }
 
 
-article {
+article, section {
   margin: .25em;
   padding: .25em;
   border: .125em solid #0000ff;
   
+}
+
+var {
+	background-color: #e5e5e5;
+	color: #000;
+}
+
+code {
+	display: block;
+	margin: .25em auto .25em;
+	padding: .25em;
+	font-family: "Roboto Mono", monospace;
+	background-color: #e5e5e5;
+	border: .125em solid #000;
+}
+
+.incorrect {
+	border-color: #9b0000;
+}
+
+.incorrect::before {
+	display: block;
+	content: "Incorrect";
+	margin: -.25em -.25em .25em;
+	padding: 0em .25em 0em;
+	font-family: "Open Sans", sans-serif;
+	background-color: #9b0000;
+	color: #fff;
+}
+
+.correct {
+	border-color: #006605;
+}
+
+.correct::before {
+	display: block;
+	content: "Correct";
+	margin: -.25em -.25em .25em;
+	padding: 0em .25em 0em;
+	font-family: "Open Sans", sans-serif;
+	background-color: #006605;
+	color: #fff;
 }
 
 .flex-box {
