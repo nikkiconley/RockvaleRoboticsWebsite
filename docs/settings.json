@@ -1,0 +1,28 @@
+{
+	"sections":
+		[
+			{
+				"title": "Team mission",
+				"id": "mission",
+				"content": "<p>The Rockvale Robotics team designs and constructs robotics for the <a href='https://www.bestrobotics.org'>BEST Robotics</a> competition.</p>"
+			},
+			{
+				"title": "Community outreach",
+				"id": "",
+				"content": "<p>The Rockvale Robotics team actively particpates in community outreach efforts. These efforts include:</p><ul><li><p>Reading to elementary school students</p></li><li><p>Replacing incandescent bulbs with LEDS for low-income residents</p></li></ul>"
+			},
+			{
+				"title": "News",
+				"id": "news",
+				"content": "<a class='twitter-timeline' data-lang='en' data-theme='light' data-link-color='#0000ff' data-tweet-limit='1' href='https://twitter.com/RockvaleRoboti1?ref_src=twsrc%5Etfw/'>Tweets by perrylouden</a> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"
+			}
+		],
+	"sponsors":
+		[
+			{
+				"name": "Bridgestone",
+				"logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridgestone_logo.svg",
+				"url": "https://Bridgestone.com/"
+			}
+		]
+}
