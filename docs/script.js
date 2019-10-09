@@ -1,3 +1,4 @@
+
 /* Copyright (c) 2019 Trey Owen, and contributors */
 
 // General variables
@@ -96,4 +97,26 @@ menuBox.addEventListener("click", () => {
   shown = 0;
   menuBox.removeAttribute("aria-expanded");
   menuBox.classList.remove("shown");
+});
+=======
+
+var menuBtn = document.getElementById("menu-btn");
+var menu = document.getElementsByTagName("nav")[0];
+var shown;
+menuBtn.addEventListener("click", () => {
+  if (shown == 1) {
+    //Hide menu
+    shown = 0;
+    menu.removeAttribute("aria-expanded");
+    menu.classList.remove("shown");
+  } else {
+    shown = 1;
+    menu.setAttribute("aria-expanded", "true");
+    menu.classList.add("shown");
+  }
+});
+menu.addEventListener("click", () => {
+  shown = 0;
+  menu.removeAttribute("aria-expanded");
+  menu.classList.remove("shown");
 });
