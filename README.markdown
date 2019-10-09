@@ -1,4 +1,6 @@
 # Rockvale Robotics
- _A Pen created at CodePen.io. Original URL: [https://codepen.io/ChickenHacker/pen/OJLBwGr](https://codepen.io/ChickenHacker/pen/OJLBwGr).
-
+This is the repository for the Rockvale Robotics Website.
+Copyright (c) 2019 Trey Owen, and contributors
+## Editing the site
+Go to settings.html for instructions
  
