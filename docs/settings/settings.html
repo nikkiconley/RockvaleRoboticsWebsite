@@ -24,6 +24,35 @@
             <h2>General</h2>
             <label for="name-box">Name</label>
             <input type="text" id="name-box" class="form-control" placeholder="Website name">
+            <label for="lang-box">Language</label>
+            <input type="text" id="lang-box" class="form-control" placeholder="en-US" disabled>
+            <label for="charset-box">Character set</label>
+            <input type="text" id="charset-box" class="form-control" placeholder="utf-8" disabled>
+            <h2>SEO</h2>
+            <label for="noindex-box">Request to hide pages from search engines (noindex)</label>
+            <select id="noindex-box" class="form-control" disabled>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label for="nofollow-box">Request to hide links from search engines (nofollow)</label>
+            <select id="nofollow-box" class="form-control" disabled>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label for="keywords-box">Keywords</label>
+            <input type="text" id="keywords-box" class="form-control" placeholder="Example, site">
+            <label for="description-box">Description</label>
+            <textarea id="description-box" class="form-control" placeholder="Example site has the examples you need.">
+            </textarea>
+            <h2>Navigation</h2>
+            <div class="alert alert-primary" role="alert">
+              Pages will not appear in navigation unless they are listed here.
+              Just add their page name and title below.
+            </div>
+            <button type="button" id="add-link-btn" class="btn btn-success">Add link</button>
+            <div id="link-box" class="card">
+
+            </div>
           </div>
         </div>
         <div class="card-footer">

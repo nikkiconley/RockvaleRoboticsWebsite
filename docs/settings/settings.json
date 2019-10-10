@@ -9,13 +9,13 @@
     {
       "noindex": 0,
       "nofollow": 0,
-      "keywords": "",
-      "description": ""
+      "keywords": "Rockvale, robotics",
+      "description": "This is the official website of the Rockvale Robotics team."
     },
-  "pages":
+  "links":
     [
       {
-        "title": "Home",
+        "name": "Home",
         "url": "index.html"
       }
     ]
