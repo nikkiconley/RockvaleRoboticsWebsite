@@ -41,6 +41,7 @@ uploadBtn.onclick = function() {
           innerLinkBox.classList.add("card");
           innerLinkBox.classList.add("m-2");
           innerLinkBox.classList.add("d-flex");
+          // Link name box
           var linkNameBox = document.createElement("input");
           linkNameBox.type = "text";
           linkNameBox.classList.add("form-control");
@@ -49,19 +50,73 @@ uploadBtn.onclick = function() {
           if (link == 0) {
             linkNameBox.placeholder = "Home";
           } else {
-            linkNameBox.placeholder = "Page";
+            linkNameBox.placeholder = "Link name";
           }
           linkNameBox.value = link.name;
           innerLinkBox.appendChild(linkNameBox);
+          // Link url box
           var linkUrlBox = document.createElement("input");
           linkUrlBox.type = "text";
           linkUrlBox.classList.add("form-control");
           linkUrlBox.classList.add("m-2");
           linkUrlBox.classList.add("w-auto");
+          linkUrlBox.placeholder = "Filename";
           linkUrlBox.value = link.url;
+          // Link remove Button
+          var removeLinkBtn = document.createElement("button");
+          removeLinkBtn.type = "button";
+          removeLinkBtn.classList.add("btn");
+          removeLinkBtn.classList.add("btn-danger");
+          removeLinkBtn.classList.add("m-2");
+          removeLinkBtn.classList.add("w-auto");
+          removeLinkBtn.innerText = "Remove";
+          removeLinkBtn.addEventListener("click", function(event) {
+            // Remove the link
+            linkBox.removeChild(innerLinkBox);
+          });
           innerLinkBox.appendChild(linkUrlBox);
+          innerLinkBox.appendChild(removeLinkBtn);
           linkBox.appendChild(innerLinkBox);
         });
+        // Add event handler for add link button
+        addLinkBtn.onclick = function() {
+          var innerLinkBox = document.createElement("div");
+          innerLinkBox.classList.add("card");
+          innerLinkBox.classList.add("m-2");
+          innerLinkBox.classList.add("d-flex");
+          // Link name box
+          var linkNameBox = document.createElement("input");
+          linkNameBox.type = "text";
+          linkNameBox.classList.add("form-control");
+          linkNameBox.classList.add("m-2");
+          linkNameBox.classList.add("w-auto");
+          linkNameBox.placeholder = "Link name";
+          linkNameBox.value = "Page " + (linkBox.children.length + 1);
+          innerLinkBox.appendChild(linkNameBox);
+          // Link url box
+          var linkUrlBox = document.createElement("input");
+          linkUrlBox.type = "text";
+          linkUrlBox.classList.add("form-control");
+          linkUrlBox.classList.add("m-2");
+          linkUrlBox.classList.add("w-auto");
+          linkUrlBox.placeholder = "Filename";
+          linkUrlBox.value = "";
+          // Link remove Button
+          var removeLinkBtn = document.createElement("button");
+          removeLinkBtn.type = "button";
+          removeLinkBtn.classList.add("btn");
+          removeLinkBtn.classList.add("btn-danger");
+          removeLinkBtn.classList.add("m-2");
+          removeLinkBtn.classList.add("w-auto");
+          removeLinkBtn.innerText = "Remove";
+          removeLinkBtn.addEventListener("click", function(event) {
+            // Remove the link
+            linkBox.removeChild(innerLinkBox);
+          });
+          innerLinkBox.appendChild(linkUrlBox);
+          innerLinkBox.appendChild(removeLinkBtn);
+          linkBox.appendChild(innerLinkBox);
+        }
         // Show settings
         settingsBox.classList.remove("hidden");
       }
