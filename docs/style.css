@@ -60,7 +60,7 @@ article, section {
   margin: .25em;
   padding: .25em;
   border: .125em solid #0000ff;
-  
+
 }
 
 var {
@@ -149,11 +149,11 @@ footer {
   #menu-btn {
     display: block;
   }
-  
+
   header > nav {
     display: none;
   }
-  
+
   header > nav > a {
     padding: .5em;
     display: block;
@@ -162,6 +162,10 @@ footer {
 
 .shown {
   display: block;
+
+.hidden {
+  display: none;
+}
 =======
 
 body {
@@ -225,7 +229,7 @@ article {
   margin: .25em;
   padding: .25em;
   border: .125em solid #0000ff;
-  
+
 }
 
 .flex-box {
@@ -272,11 +276,11 @@ footer {
   #menu-btn {
     display: block;
   }
-  
+
   header > nav {
     display: none;
   }
-  
+
   header > nav > a {
     padding: .5em;
     display: block;

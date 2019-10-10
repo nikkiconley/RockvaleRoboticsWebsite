@@ -1,0 +1,22 @@
+{
+  "general":
+    {
+      "name": "Rockvale Robotics",
+      "language": "en-US",
+      "charset": "utf-8"
+    },
+  "seo":
+    {
+      "noindex": 0,
+      "nofollow": 0,
+      "keywords": "",
+      "description": ""
+    },
+  "pages":
+    [
+      {
+        "title": "Home",
+        "url": "index.html"
+      }
+    ]
+}
