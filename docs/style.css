@@ -290,3 +290,7 @@ footer {
 .shown {
   display: block;
 }
+
+.hidden {
+  display: none;
+}
