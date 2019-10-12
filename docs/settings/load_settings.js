@@ -11,7 +11,7 @@ request.onreadystatechange = function() {
     // Load settings
     var settings = JSON.parse(this.responseText);
     // General
-    document.title += " -" + settings.general.name;
+    document.title += " - " + settings.general.name;
     document.documentElement.lang = settings.general.language;
     var charset = document.createElement("meta");
     charset.setAttribute("charset", settings.general.charset);
