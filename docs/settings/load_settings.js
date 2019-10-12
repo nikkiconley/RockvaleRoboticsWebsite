@@ -16,6 +16,7 @@ request.onreadystatechange = function() {
     var charset = document.createElement("meta");
     charset.setAttribute("charset", settings.general.charset);
     document.head.appendChild(charset);
+    console.log("hello");
   }
 }
 request.open("GET", url, true);
