@@ -5,7 +5,7 @@
 
 console.log("hello");
 var request = new XMLHttpRequest(),
-url = "settings.json";
+url = "settings/settings.json";
 request.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     // Load settings
