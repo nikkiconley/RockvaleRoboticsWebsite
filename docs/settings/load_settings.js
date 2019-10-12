@@ -25,6 +25,7 @@ request.onreadystatechange = function() {
     var description = document.createElement("meta");
     description.name = "description";
     description.content = settings.seo.description;
+    document.head.appendChild(description);
 
   }
 }
