@@ -3,7 +3,7 @@
 
 // Use document.body reference, etc.
 
-
+console.log("hello");
 var request = new XMLHttpRequest(),
 url = "settings.json";
 request.onreadystatechange = function() {
@@ -12,11 +12,11 @@ request.onreadystatechange = function() {
     var settings = JSON.parse(this.responseText);
     // general
     document.title += " -" + settings.general.name;
-    document.documentElement.setAttribute("lang", settings.general.language);
+    document.documentElement.lang = settings.general.language;
     var charset = document.createElement("meta");
     charset.setAttribute("charset", settings.general.charset);
     document.head.appendChild(charset);
-    console.log("hello");
+
   }
 }
 request.open("GET", url, true);
