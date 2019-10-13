@@ -2,6 +2,7 @@
 // This document loads the settings from settings.json
 
 // Use document.body reference, etc.
+var menu = document.getElementsByTagName("nav")[0];
 
 console.log("hello");
 var request = new XMLHttpRequest(),
@@ -26,6 +27,14 @@ request.onreadystatechange = function() {
     description.name = "description";
     description.content = settings.seo.description;
     document.head.appendChild(description);
+    // Menu/navigation links
+    settings.links.forEach(function(n) {
+      var link = document.createElement("a");
+      link.setAttribute("aria-role", "menu-item");
+      link.href = n.url;
+      link.innerText = n.name;
+      menu.appendChild(link);
+    });
 
   }
 }

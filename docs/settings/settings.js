@@ -12,7 +12,8 @@ nofollowBox = document.getElementById("nofollow-box"),
 keywordsBox = document.getElementById("keywords-box"),
 descriptionBox = document.getElementById("description-box"),
 addLinkBtn = document.getElementById("add-link-btn"),
-linkBox = document.getElementById("link-box");
+linkBox = document.getElementById("link-box"),
+downloadBtn = document.getElementById("download-btn");
 
 // Check for upload
 uploadBtn.onclick = function() {
@@ -117,8 +118,51 @@ uploadBtn.onclick = function() {
           innerLinkBox.appendChild(removeLinkBtn);
           linkBox.appendChild(innerLinkBox);
         }
+        // Download
+        var settingBoxes = settingsBox.querySelectorAll("input");
+        settingBoxes.forEach(function(box) {
+          box.addEventListener("input", function() {
+            downloadBtn.classList.add("disabled");
+            downloadBtn.setAttribute("aria-disabled", "true");
+            var blob = new Blob([JSON.stringify(createJSON())], {type: "application/json"});
+            downloadBtn.href = URL.createObjectURL(blob);
+            downloadBtn.download = "settings.json";
+            console.log(downloadBtn.href);
+            downloadBtn.classList.remove("disabled");
+            downloadBtn.removeAttribute("aria-disabled");
+          });
+        });
+
+        function cleanString(string) {
+          return string.replace(/"/g, "\"");
+        }
+
+        function createJSON() {
+          var json = { general: {}, seo: {}, links: [] };
+          // General
+          json.general.name = cleanString(nameBox.value);
+          json.general.language = cleanString(langBox.value);
+          json.general.charset = cleanString(charsetBox.value);
+          // SEO
+          json.seo.noindex = noindexBox.value;
+          json.seo.nofollow = nofollowBox.value;
+          json.seo.keywords = cleanString(keywordsBox.value);
+          json.seo.description = cleanString(descriptionBox.value);
+          // Links
+          var innerLinkBoxes = linkBox.querySelectorAll(".card");
+          innerLinkBoxes.forEach(function(innerLinkBox) {
+            var link = {name: innerLinkBox.firstElementChild.value, url: innerLinkBox.children[1].value};
+            json.links.push(link);
+          });
+          // Return
+          return json;
+        }
         // Show settings
         settingsBox.classList.remove("hidden");
+        // Download
+        function Download() {
+
+        }
       }
     } else {
       alert("Incorrect file type.");

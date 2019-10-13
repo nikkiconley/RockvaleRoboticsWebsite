@@ -45,14 +45,23 @@
             <textarea id="description-box" class="form-control" placeholder="Example site has the examples you need.">
             </textarea>
             <h2>Navigation</h2>
+            <div class="alert alert-warning" role="alert">
+              Page URLs/filenames cannot include special characters.
+            </div>
             <div class="alert alert-primary" role="alert">
               Pages will not appear in navigation unless they are listed here.
-              Just add their page name and title below.
+              Add their page name and URL/filename below.
             </div>
             <button type="button" id="add-link-btn" class="btn btn-success">Add link</button>
             <div id="link-box" class="card">
 
             </div>
+            <div class="alert alert-info" role="alert">
+              Once downloaded, move "settings.json" to the /docs/settings/ folder in the repository.
+            </div>
+            <a id="download-btn" class="btn btn-success disabled" aria-disabled="true" role="button" href="#" download>
+              Download
+            </a>
           </div>
         </div>
         <div class="card-footer">
