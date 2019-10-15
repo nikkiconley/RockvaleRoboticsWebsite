@@ -118,9 +118,9 @@ footer {
 }
 
 .shown {
-  display: block;
+  display: block !important;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }

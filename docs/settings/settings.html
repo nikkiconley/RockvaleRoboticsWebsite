@@ -20,7 +20,9 @@
             This is the settings.json file in docs/settings/.
           </small>
           <button type="button" id="upload-btn" class="btn btn-primary">Upload and open</button>
-          <div id="settings-box" class="hidden" style="">
+        </div>
+        <ul id="settings-box" class="list-group list-group-flush hidden">
+          <li class="list-group-item">
             <h2>General</h2>
             <label for="name-box">Name</label>
             <input type="text" id="name-box" class="form-control" placeholder="Website name">
@@ -28,6 +30,8 @@
             <input type="text" id="lang-box" class="form-control" placeholder="en-US" disabled>
             <label for="charset-box">Character set</label>
             <input type="text" id="charset-box" class="form-control" placeholder="utf-8" disabled>
+          </li>
+          <li class="list-group-item">
             <h2>SEO</h2>
             <label for="noindex-box">Request to hide pages from search engines (noindex)</label>
             <select id="noindex-box" class="form-control" disabled>
@@ -44,6 +48,8 @@
             <label for="description-box">Description</label>
             <textarea id="description-box" class="form-control" placeholder="Example site has the examples you need.">
             </textarea>
+          </li>
+          <li class="list-group-item">
             <h2>Navigation</h2>
             <div class="alert alert-warning" role="alert">
               Page URLs/filenames cannot include special characters.
@@ -56,14 +62,17 @@
             <div id="link-box" class="card">
 
             </div>
+          </li>
+          <li class="list-group-item">
+            <h2>Download</h2>
             <div class="alert alert-info" role="alert">
               Once downloaded, move "settings.json" to the /docs/settings/ folder in the repository.
             </div>
             <a id="download-btn" class="btn btn-success disabled" aria-disabled="true" role="button" href="#" download>
               Download
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="card-footer">
           Copyright (c) 2019 Trey Owen<br>
           Bootstrap licensed under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT License</a>.
