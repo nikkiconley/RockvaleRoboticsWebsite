@@ -1,0 +1,126 @@
+body {
+  display: block;
+  margin: 0em;
+  padding: 0em;
+}
+
+header {
+  margin: 0em auto .25em;
+  padding: .25em .25em 0em;
+  background-color: #0000ff;
+}
+
+nav {
+  margin: -.25em -.25em 0em;
+  padding: .5em;
+  background-color: #0000ff;
+}
+
+header > nav {
+  margin: -.25em -.25em 0em;
+  padding: .5em;
+  background-color: #0000ff;
+}
+
+nav > a {
+  padding: .25em;
+  color: #fff;
+}
+
+nav > a:focus {
+  outline: none;
+  border: .125em solid #fff;
+  font-weight: bold;
+}
+
+/* Text */
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Open Sans", sans-serif;
+}
+
+header > h1 {
+  color: #fff;
+}
+
+.material-icons {
+  color: #fff;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+article {
+  margin: .25em;
+  padding: .25em;
+  border: .125em solid #0000ff;
+
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grey-box {
+  display: block;
+  width: 100%;
+  margin: 0em;
+  padding: .25em;
+  background-color: #e5e5e5;
+}
+
+/* Footer */
+footer {
+  margin: 0em 0em 0em;
+  padding: .25em;
+  background-color: #0000ff;
+  color: #fff;
+}
+
+/* Moblie */
+#menu-btn {
+  outline: none;
+  margin: 0em 0em 0em -.25em;
+  padding: .5em;
+  background-color: #0000ff;
+  border: none;
+  display: none;
+}
+
+#menu-btn:focus {
+  box-shadow: 0em 0em 0em .125em #fff inset;
+}
+
+#menu-btn > i {
+  float: left;
+}
+
+@media (max-width: 600px) {
+  #menu-btn {
+    display: block;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header > nav > a {
+    padding: .5em;
+    display: block;
+  }
+}
+
+.shown {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}

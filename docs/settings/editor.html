@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Small Site Utility</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/editor.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="editor.js" defer></script>
+    <script src="../scripts/editor.js" defer></script>
   </head>
   <body>
     <div class="card m-1">
@@ -15,6 +16,9 @@
         <a href="index.html">&lt; Back</a>
         </div>
         <div class="card-body">
+          <div class="alert alert-danger" role="alert">
+            This page is still in development and is unstable.
+          </div>
           <label for="upload-box">Upload webpage</label>
           <input type="file" id="upload-box" class="form-control" accept=".json" aria-aria-describedby="upload-help-box">
           <small id="upload-help-box" class="form-text">
@@ -33,22 +37,35 @@
             <h2>Editor</h2>
               <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <button type="button" id="visual-tab-btn" class="nav-link">Visual</button>
+                  <button type="button" id="visual-tab-btn" class="nav-link disabled">Visual</button>
                 </li>
                 <li class="nav-item">
                   <button type="button" id="html-tab-btn" class="nav-link">HTML</button>
                 </li>
               </ul>
-              <div id="visual-tab-box" class="card border-top-0 rounded-0 rounded-bottom">
-                <div class="btn-toolbar" role="toolbar" aria-label="Element toolbar">
-                  <div class="btn-group" role="group" aria-label="Headings">
-                    <button type="button" class="btn btn-secondary">h1</button>
-                    <button type="button" class="btn btn-secondary">h2</button>
-                    <button type="button" class="btn btn-secondary">h3</button>
+              <div id="visual-tab-box" class="card hidden p-2 border-top-0 rounded-0 rounded-bottom">
+                <div id="visual-toolbar-box" class="btn-toolbar mb-2" role="toolbar" aria-label="Element toolbar">
+                  <div class="btn-group mr-2" role="group" aria-label="Headings">
+                    <button type="button" class="btn btn-secondary"><img src="../imgs/icons/heading_1.svg" alt="h1"></button>
+                    <button type="button" class="btn btn-secondary"><img src="../imgs/icons/heading_2.svg" alt="h2"></button>
+                    <button type="button" class="btn btn-secondary"><img src="../imgs/icons/heading_3.svg" alt="h3"></button>
+                  </div>
+                  <div class="btn-group mr-2" role="group" aria-label="Text">
+                    <button type="button" id="visual-paragraph-btn" class="btn btn-secondary"><img src="../imgs/icons/paragraph.svg" alt="p"></button>
+                    <button type="button" id="visual-hyperlink-btn" class="btn btn-secondary"><img src="../imgs/icons/hyperlink.svg" alt="a"></button>
+                  </div>
+                  <div class="btn-group mr-2" role="group" aria-label="Image">
+                    <button type="button" class="btn btn-secondary"><img src="../imgs/icons/image.svg" alt="img"></button>
                   </div>
                 </div>
                 <div id="visual-box" class="card">
                 </div>
+              </div>
+              <div id="html-tab-box" class="card p-2 border-top-0 rounded-0 rounded-bottom">
+                <div class="alert alert-info" role="alert">
+                  Access to the head is disabled.
+                </div>
+                <div id="html-box" class="card" contenteditable="true"></div>
               </div>
           </li>
           <li class="list-group-item">
@@ -61,10 +78,6 @@
             </a>
           </li>
         </ul>
-        <div class="card-footer">
-          Copyright (c) 2019 Trey Owen<br>
-          Bootstrap licensed under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT License</a>.
-        </div>
     </div>
   </body>
 </html>

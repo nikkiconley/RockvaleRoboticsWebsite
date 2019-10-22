@@ -1,0 +1,18 @@
+/* All */
+#visual-box > * {
+  margin: .25em;
+  border: .125em dashed #404040;
+  border-radius: .25em;
+}
+
+/* Boxes */
+
+#html-box {
+  display: inline;
+  direction: ltr;
+}
+
+.red-txt {
+  color: red;
+  display: inline;
+}
