@@ -17,6 +17,14 @@
       {
         "name": "Home",
         "url": "index.html"
+      },
+      {
+        "name": "News",
+        "url": "news.html"
+      },
+      {
+        "name": "About",
+        "url": "about.html"
       }
     ]
 }

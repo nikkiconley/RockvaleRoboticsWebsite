@@ -81,18 +81,7 @@ request.send();
 
 var menuBtn = document.getElementById("menu-btn"),
 shown;
-menuBtn.addEventListener("click", () => {
-  if (shown == 1) {
-	//Hide menuBox
-	shown = 0;
-	menuBox.removeAttribute("aria-expanded");
-	menuBox.classList.remove("shown");
-  } else {
-	shown = 1;
-	menuBox.setAttribute("aria-expanded", "true");
-	menuBox.classList.add("shown");
-  }
-});
+
 menuBox.addEventListener("click", () => {
   shown = 0;
   menuBox.removeAttribute("aria-expanded");

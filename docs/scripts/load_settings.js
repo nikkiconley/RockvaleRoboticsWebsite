@@ -2,9 +2,12 @@
 // This document loads the settings from settings.json
 
 // Use document.body reference, etc.
-var menu = document.getElementsByTagName("nav")[0];
+console.log("Small Site Utility: Copyright (c) 2019 Trey Owen, and contributors. Unauthorized distribution is prohibited.");
 
-console.log("hello");
+var menuBox = document.getElementsByTagName("nav")[0];
+var menuBtn = document.getElementById("menu-btn");
+var footer = document.getElementsByTagName("footer")[0];
+
 var request = new XMLHttpRequest(),
 url = "settings/settings.json";
 request.onreadystatechange = function() {
@@ -33,7 +36,30 @@ request.onreadystatechange = function() {
       link.setAttribute("aria-role", "menu-item");
       link.href = n.url;
       link.innerText = n.name;
-      menu.appendChild(link);
+      menuBox.appendChild(link);
+    });
+    // Edit link
+    var editLink = document.createElement("a");
+    editLink.href = "settings/index.html";
+    var editLinkIcon = document.createElement("i");
+    editLinkIcon.classList.add("material-icons");
+    editLinkIcon.innerText = "edit";
+    editLink.appendChild(editLinkIcon);
+    editLink.innerHTML += "Edit page";
+    footer.appendChild(editLink);
+    // Menu link
+    var shown;
+    menuBtn.addEventListener("click", () => {
+      if (shown == 1) {
+    	//Hide menuBox
+    	shown = 0;
+    	menuBox.removeAttribute("aria-expanded");
+    	menuBox.classList.remove("shown");
+      } else {
+    	shown = 1;
+    	menuBox.setAttribute("aria-expanded", "true");
+    	menuBox.classList.add("shown");
+      }
     });
 
   }

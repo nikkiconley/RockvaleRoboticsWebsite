@@ -33,6 +33,22 @@ nav > a:focus {
   font-weight: bold;
 }
 
+/* Buttons */
+
+.btn {
+  padding: .5em;
+  border: none;
+  border-radius: .25em;
+  background-color: #0000ca;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:active, .btn:focus {
+  border: .125em solid #0000ca;
+  box-shadow: 0em 0em 0em .125em #fff inset;
+}
+
 /* Text */
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Open Sans", sans-serif;
@@ -42,29 +58,52 @@ header > h1 {
   color: #fff;
 }
 
-.material-icons {
+header .material-icons, footer .material-icons {
   color: #fff;
 }
 
 /* Main */
 main {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
 }
 
 
 article {
+  display: block;
   margin: .25em;
   padding: .25em;
   border: .125em solid #0000ff;
 
 }
 
+section {
+  margin: .25em 0 .25em;
+  padding: .25em;
+}
+
+.blue-section {
+  margin: .25em 0 .25em;
+  padding: .25em;
+}
+
+.blue-section h2 {
+  padding: .25em;
+  background-color: #0000ca;
+  color: #fff;
+}
+
 .flex-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
 }
 
@@ -78,10 +117,14 @@ article {
 
 /* Footer */
 footer {
-  margin: 0em 0em 0em;
+  margin: .25em 0em 0em;
   padding: .25em;
   background-color: #0000ff;
   color: #fff;
+}
+
+footer > a {
+  color: white;
 }
 
 /* Moblie */
