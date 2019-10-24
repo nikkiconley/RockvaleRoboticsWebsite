@@ -49,7 +49,7 @@ request.onreadystatechange = function() {
     footer.appendChild(editLink);
     // Menu link
     var shown;
-    menuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", function() {
       if (shown == 1) {
     	//Hide menuBox
     	shown = 0;
