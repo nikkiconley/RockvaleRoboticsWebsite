@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Small Site Utility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../scripts/settings.js" defer></script>
+  </head>
+  <body>
+    <div class="card m-1">
+      <div class="card-header">
+        <h1 class="card-title">Change settings</h1>
+        <a href="index.html">&lt; Back</a>
+        </div>
+        <div class="card-body">
+          <label for="upload-box">Upload settings file</label>
+          <input type="file" id="upload-box" class="form-control" accept=".json" aria-aria-describedby="upload-help-box">
+          <small id="upload-help-box" class="form-text">
+            This is the settings.json file in docs/settings/.
+          </small>
+          <button type="button" id="upload-btn" class="btn btn-primary">Upload and open</button>
+        </div>
+        <ul id="settings-box" class="list-group list-group-flush hidden">
+          <li class="list-group-item">
+            <h2>General</h2>
+            <label for="name-box">Name</label>
+            <input type="text" id="name-box" class="form-control" placeholder="Website name">
+            <label for="lang-box">Language</label>
+            <input type="text" id="lang-box" class="form-control" placeholder="en-US" disabled>
+            <label for="charset-box">Character set</label>
+            <input type="text" id="charset-box" class="form-control" placeholder="utf-8" disabled>
+          </li>
+          <li class="list-group-item">
+            <h2>SEO</h2>
+            <label for="noindex-box">Request to hide pages from search engines (noindex)</label>
+            <select id="noindex-box" class="form-control" disabled>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label for="nofollow-box">Request to hide links from search engines (nofollow)</label>
+            <select id="nofollow-box" class="form-control" disabled>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label for="keywords-box">Keywords</label>
+            <input type="text" id="keywords-box" class="form-control" placeholder="Example, site">
+            <label for="description-box">Description</label>
+            <textarea id="description-box" class="form-control" placeholder="Example site has the examples you need.">
+            </textarea>
+          </li>
+          <li class="list-group-item">
+            <h2>Navigation</h2>
+            <div class="alert alert-warning" role="alert">
+              Page URLs/filenames cannot include special characters.
+            </div>
+            <div class="alert alert-primary" role="alert">
+              Pages will not appear in navigation unless they are listed here.
+              Add their page name and URL/filename below.
+            </div>
+            <button type="button" id="add-link-btn" class="btn btn-success">Add link</button>
+            <div id="link-box" class="card">
+
+            </div>
+          </li>
+          <li class="list-group-item">
+            <h2>Download</h2>
+            <div class="alert alert-info" role="alert">
+              Once downloaded, move "settings.json" to the /docs/settings/ folder in the repository.
+            </div>
+            <a id="download-btn" class="btn btn-success disabled" aria-disabled="true" role="button" href="#" download>
+              Download
+            </a>
+          </li>
+        </ul>
+    </div>
+  </body>
+</html>

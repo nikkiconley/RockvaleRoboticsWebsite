@@ -1,0 +1,30 @@
+{
+  "general":
+    {
+      "name": "Rockvale Robotics",
+      "language": "en-US",
+      "charset": "utf-8"
+    },
+  "seo":
+    {
+      "noindex": 0,
+      "nofollow": 0,
+      "keywords": "Rockvale, robotics",
+      "description": "This is the official website of the Rockvale Robotics team."
+    },
+  "links":
+    [
+      {
+        "name": "Home",
+        "url": "index.html"
+      },
+      {
+        "name": "News",
+        "url": "news.html"
+      },
+      {
+        "name": "About",
+        "url": "about.html"
+      }
+    ]
+}

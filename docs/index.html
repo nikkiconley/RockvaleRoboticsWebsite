@@ -1,50 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Rockvale Robotics</title>
-  <meta http-equiv="Content-Security-Policy" content=" script-src 'self' https://*;">
-<meta charset="UTF-8">
-<title>Home - Rockvale Robotics</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<meta name="theme-color" content="#0000ff"><link rel="stylesheet" href="./style.css">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <meta name="theme-color" content="#0000ca">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <script defer src="scripts/load_settings.js"></script>
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <header>
   <h1>Rockvale Robotics</h1>
   <button id="menu-btn"><i class="material-icons">menu</i></button>
   <nav aria-role="menu">
-    <a aria-role="menu-item" href="#">Home</a>
-    <a aria-role="menu-item" href="#news">News</a>
-    <a aria-role="menu-item" href="#sponsors">Sponsors</a>
-    <a aria-role="menu-item" href="#about">About</a>
   </nav>
 </header>
-  <main>
-    <article>
-      <h2>Team mission</h2>
-      <p>The Rockvale Robotics team designs and constructs robotics for the <a href="https://www.bestrobotics.org/">BEST Robotics</a> compitition.</p>
-    </article>
-        <article id="news">
-          <h2>News</h2>
-      <a class="twitter-timeline" data-lang="en" data-theme="light" data-link-color="#0000ff" data-tweet-limit="1" href="https://twitter.com/RockvaleRoboti1?ref_src=twsrc%5Etfw">Tweets by perrylouden</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </article>
-    <div id="sponsors" class="grey-box flex-box">
-      <h2>Team sponsors</h2>
-      <a href="https://www.bridgestone.com/" title="Bridgestone Corporation"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridgestone_logo.svg" alt="Bridgestone"></a>
-    </div>
+  <main class="grid-box">
+    <section class="blue-section">
+      <h2>Welcome</h2>
+      <img class="half-width" src="imgs/rockvale_robotics_logo_robot_256.svg" alt="Robotics logo">
+      <p>Welcome to the Rockvale Robotics website. Learn more about our robot and the team.</p>
+      <a class="btn" href="about.html">Learn more</a>
+    </section>
+    <section class="blue-section">
+      <h2>News</h2>
+      <img class="half-width" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/716-newspaper.svg" alt="Newspaper icon">
+      <p>See what's happening.</p>
+      <a class="outline-btn" href="news.html">View news</a>
+    </section>
+    <section id="sponsors-box" class="blue-section">
+      <h2>Sponsors</h2>
+      <a href="https://www.bridgestone.com/" title="Bridgestone"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridgestone_logo.svg" alt="Bridgestone"></a>
+      <a href="https://www.adient.com/" title="Adient"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Adient.svg" alt="Adient"></a>
+    </section>
   </main>
-<footer id="about">
-  <h3>About Rockvale Robotics</h3>
-  <p>A joint effort of middle and high school students since 2019.</p>
+<footer id="about-box">
+  <h2>About Rockvale Robotics</h2>
+  <p>A joint effort of Rockvale Middle/High students since 2019.</p>
   <p><strong>IP disclaimer:</strong> All trademarks are property of their respective owners.</p>
+  <p>Page last edited 10/28/19.</p>
 </footer>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>

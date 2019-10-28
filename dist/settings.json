@@ -1,10 +1,15 @@
 {
-	"sections": 
+	"sections":
 		[
 			{
 				"title": "Team mission",
+				"id": "mission",
+				"content": "<p>The Rockvale Robotics team designs and constructs robotics for the <a href='https://www.bestrobotics.org'>BEST Robotics</a> competition.</p>"
+			},
+			{
+				"title": "Community outreach",
 				"id": "",
-				"content": "<p>The Rockvale Robotics team designs and constructs robotics for the <a href='https://www.bestrobotics.org'>BEST Robotics</a> compitition.</p>"
+				"content": "<p>The Rockvale Robotics team actively particpates in community outreach efforts. These efforts include:</p><ul><li><p>Reading to elementary school students</p></li><li><p>Replacing incandescent bulbs with LEDS for low-income residents</p></li></ul>"
 			},
 			{
 				"title": "News",
