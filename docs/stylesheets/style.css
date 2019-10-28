@@ -46,6 +46,11 @@ body {
   height: 25%;
 }
 
+/* Margin */
+.auto-margin {
+  margin: auto;
+}
+
 /* Header */
 
 header {
