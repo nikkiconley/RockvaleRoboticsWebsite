@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: Home
 ---
+
+# Welcome to Rockvale Robotics
+This site is under construction. Please check back later.
 
 A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
 
@@ -89,16 +92,6 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 Like this project ? [Consider adding a star on Github](https://github.com/nicolas-van/bootstrap-4-github-pages).
 
 [You can also see the contribution guide](https://github.com/nicolas-van/bootstrap-4-github-pages/blob/master/CONTRIBUTING.md).
-
-## Websites using Bootstrap 4 Github Pages
-
-* [My personal blog](https://nicolas-van.github.io/)
-* [the wavelet's profile](https://thewavelet.github.io/)
-* [roseblood.github.io](https://roseleblood.github.io/)
-* [colemannick.github.io](https://colemannick.github.io/)
-* [Betty and the Blushtones](http://bettyandtheblushtones.co.uk/)
-* [borislouis.github.io](https://borislouis.github.io/)
-* [dariusnwadike.github.io](https://dariusnwadike.github.io/)
 
 ## Other projects
 
