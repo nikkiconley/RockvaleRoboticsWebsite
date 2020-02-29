@@ -1,48 +1,46 @@
----
-layout: page
-title: Home
----
-
-<main role="main">
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Hello, world!</h1>
-      <p>This is a template for a simple marketing or informational website. This will be used with Jekyll and Github Pages
-      </p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
-  </div>
-
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Welcome</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>News</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View news &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Sponsors</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-          massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>
-    </div>
-
-    <hr>
-
-  </div> <!-- /container -->
-
-</main>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <meta name="theme-color" content="#0000ca">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <script defer src="scripts/load_settings.js"></script>
+</head>
+<body>
+<header>
+  <h1 class="centered-text">Rockvale Robotics</h1>
+  <button id="menu-btn"><i class="material-icons">menu</i></button>
+  <nav aria-role="menu">
+  </nav>
+</header>
+  <main class="grid-box">
+    <section class="blue-section">
+      <h2>Welcome</h2>
+      <img class="half-width" src="imgs/rockvale_robotics_logo_robot_256.svg" alt="Robotics logo">
+      <p>Welcome to the Rockvale Robotics website. Learn more about our robot and the team.</p>
+      <a class="btn" href="about.html">Learn more</a>
+    </section>
+    <section class="blue-section">
+      <h2>News</h2>
+      <img class="half-width" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/716-newspaper.svg" alt="Newspaper icon">
+      <p>See what's happening.</p>
+      <a class="outline-btn" href="news.html">View news</a>
+    </section>
+    <section id="sponsors-box" class="blue-section">
+      <h2>Sponsors</h2>
+      <a href="https://www.bridgestone.com/" title="Bridgestone"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridgestone_logo.svg" alt="Bridgestone"></a>
+      <a href="https://www.adient.com/" title="Adient"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Adient.svg" alt="Adient"></a>
+    </section>
+  </main>
+<footer id="about-box">
+  <h2>About Rockvale Robotics</h2>
+  <p>A joint effort of Rockvale Middle/High students since 2019.</p>
+  <p><strong>IP disclaimer:</strong> All trademarks are property of their respective owners.</p>
+  <p>Page last edited 10/29/19.</p>
+</footer>
+</body>
+</html>
