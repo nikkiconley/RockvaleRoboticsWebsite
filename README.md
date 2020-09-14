@@ -1,21 +1,17 @@
 
-# Boostrap 4 Github Pages
+# Rockvale Robotics Website
 
-[![Build Status](https://travis-ci.org/nicolas-van/bootstrap-4-github-pages.svg?branch=master)](https://travis-ci.org/nicolas-van/bootstrap-4-github-pages)
+The official website for the Rockvale Robotics Team.
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+[Dead site link](https://github.io/)
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+## Structure
+**This is a work in progress**
+This website is powered by GitHub Pages and Jekyll.
 
-[See the website for demonstration and documentation](https://nicolas-van.github.io/bootstrap-4-github-pages/).
+## Contributing
+Please refer to Contributing.md.
 
-## Contribution
-
-[See the contribution guide.](./CONTRIBUTING.md)
-
-## License
-
-[See the license file.](./LICENSE.md)
+##License
+Copyright &copy; 2019-2020 Trey Owen, and contributors.
+This project is made with open and closed source components.
