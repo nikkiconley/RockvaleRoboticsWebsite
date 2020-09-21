@@ -1,6 +1,6 @@
 /* Fix block elements */
 
-body, header, main, footer {
+body, header, main, article, section, footer {
   display: block;
 }
 
