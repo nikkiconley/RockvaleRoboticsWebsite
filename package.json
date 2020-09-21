@@ -1,0 +1,25 @@
+{
+  "name": "rockvaleroboticswebsite",
+  "version": "2.0.0",
+  "description": "The official website for the Rockvale Robotics Team.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChickenHacker12/RockvaleRoboticsWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChickenHacker12/RockvaleRoboticsWebsite/issues"
+  },
+  "homepage": "https://github.com/ChickenHacker12/RockvaleRoboticsWebsite#readme"
+}
