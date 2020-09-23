@@ -3,11 +3,11 @@
 
 The official website for the Rockvale Robotics Team.
 
-[Dead site link](https://github.io/)
+[Preview with GitHub pages (master)](https://nikkiconley.github.io/RockvaleRoboticsWebsite/)
 
 ## Structure
 **This is a work in progress**
-This website is powered by GitHub Pages and Jekyll.
+This website is powered by GitHub Pages, Bootstrap 4 and Jekyll.
 
 ## Contributing
 Please refer to Contributing.md.
