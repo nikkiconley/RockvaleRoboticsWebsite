@@ -1,10 +1,8 @@
-// h1, h2, h3 {
-//   font-family: "Source Code Pro", monospace;
-// }
-//
-// h4, h5, h6 {
-//   font-family: "Source Sans Pro", sans-serif;
-// }
+
 // Keep fonts seperate
+
+@import "../../typefaces/source_code_pro/source_code_pro.css";
+@import "../../typefaces/source_sans_pro/source_sans_pro.css";
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

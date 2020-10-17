@@ -1,0 +1,43 @@
+/* Imports only */
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: lighter;
+  font-style: normal;
+  src: url("SourceSansPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: lighter;
+  font-style: italic;
+  src: url("SourceSansPro-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: url("SourceSansPro-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 700;
+  src: url("SourceSansPro-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: bold;
+  font-weight: 700;
+  src: url("SourceSansPro-Bold.ttf");
+}
