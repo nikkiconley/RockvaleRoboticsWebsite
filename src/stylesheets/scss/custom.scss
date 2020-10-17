@@ -1,8 +1,7 @@
 
 // Keep fonts seperate
-
-@import "../../typefaces/source_code_pro/source_code_pro.css";
-@import "../../typefaces/source_sans_pro/source_sans_pro.css";
-
+$theme-colors: (
+  "rockvale-blue": #0261A6
+);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
