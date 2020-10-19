@@ -1,7 +1,13 @@
 
 // Keep fonts seperate
 $theme-colors: (
-  "rockvale-blue": #0261A6
+  "rockvale-blue": #0261A6,
+  "primary": #0261A6,
+  "secondary": #6B767D,
+  "yellow": #F2C61B,
+  "danger": #A63A0A
+
 );
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// Fix node_modules location relative to src
+@import "../../../node_modules/bootstrap/scss/bootstrap";
