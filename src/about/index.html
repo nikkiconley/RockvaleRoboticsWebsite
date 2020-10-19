@@ -5,33 +5,18 @@
     <title>About - Rockvale Robotics</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/css/custom_bootstrap.min.css">
     <script src="../scripts/jquery.min.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" type="text/css" href="../typefaces/source_code_pro/source_code_pro.css">
     <link rel="stylesheet" type="text/css" href="../typefaces/source_sans_pro/source_sans_pro.css"> -->
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-rockvale-blue">
-        <a class="navbar-brand" href="../index.html">Rockvale Robotics</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-box" aria-controls="navbar-box">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbar-box">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../the_competition.html">The competition</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="navbar navbar-dark flex-column flex-md-row bg-primary">
+        <a class="navbar-brand mr-0 flex-md-fill" href="../index.html">Rockvale Robotics</a>
+        <a class="nav-link text-light" href="../index.html">Home</a>
+        <a class="nav-link text-light" href="../the_competition.html">The competition</a>
+        <a class="nav-link text-light" href="../news.html">News</a>
+        <a class="nav-link text-light" href="#">About</a>
       </nav>
     </header>
     <div class="jumbotron">
@@ -47,6 +32,11 @@
     </div>
     <div class="container">
       <div class="row">
+        <div class="col">
+        <p>All you need to paint is a few tools, a little instruction, and a vision in your mind. Painting should do one thing. It should put happiness in your heart. You can create the world you want to see and be a part of. You have that power. Isn't it fantastic that you can change your mind and create all these happy things? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. Volunteering your time; it pays you and your whole community fantastic dividends. This is your world, whatever makes you happy you can put in it. Go crazy.</p>
+      </div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
 
           <h2>Community outreach</h2>
@@ -61,14 +51,14 @@
       </div>
     </div>
     <footer>
-      <div class="container border-top mt-4">
+      <div class="container border-top border-primary mt-4">
         <div class="row">
         <div class="col-md-4">
           <div class="d-none d-md-block">
             <img src="..\imgs\rockvale_robotics_logo_robot_256.svg" alt="Rockvale Robotics logo">
           </div>
-          <div class="d-md-block">
-            <p>Rockvale Robotics</p>
+          <div class="d-md-none">
+            <p class="mt-2 text-primary font-weight-bold">Rockvale Robotics</p>
             </div>
             </div>
             <!-- Move team name over general nav and add other images -->
@@ -89,11 +79,20 @@
             </nav>
           </div>
       </div>
-      <div class="row">
-        <div class="col">
-        <p>Copyright &copy; 2019-2020 Rockvale Robotics Team, and contributors. All other trademarks are property of their respective owners.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-fluid" src="../imgs/BEST_robotics_logo.jpg" alt="Best Robotics">
+
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="../imgs/music_city_BEST.jpg" alt="MUSIC City BEST">
+          </div>
         </div>
-        </div>
+        <div class="row">
+          <div class="col">
+          <p>Copyright &copy; 2019-2020 Rockvale Robotics Team, and contributors.</p>
+          </div>
+          </div>
         </div>
       </footer>
   </body>
