@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Building...\" && sass src/stylesheets/scss/custom.scss src/stylesheets/css/custom_bootstrap.min.css"
   },
   "repository": {
     "type": "git",
